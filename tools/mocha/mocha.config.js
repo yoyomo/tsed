@@ -16,6 +16,7 @@ module.exports = () => ({
     "packages/security/oidc-provider/**/*.spec.ts",
     "packages/platform/platform-serverless/**/*.spec.ts",
     "packages/platform/platform-log-middleware/**/*.spec.ts",
+    "packages/platform/platform-log-request/**/*.spec.ts",
     "packages/third-parties/formio/**/*.spec.ts"
   ],
   timeout: 5000

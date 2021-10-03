@@ -322,12 +322,6 @@ export abstract class PlatformBuilder<App = TsED.Application, Router = TsED.Rout
   }
 
   protected async loadRoutes() {
-    // istanbul ignore next
-    if (this.settings.logger?.level !== "off") {
-      const {PlatformLogMiddleware} = await import("@tsed/platform-log-middleware");
-      this.app.use(PlatformLogMiddleware);
-    }
-
     this.log("Load routes");
     await this.callHook("$beforeRoutesInit");
 
